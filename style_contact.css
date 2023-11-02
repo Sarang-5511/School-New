@@ -1,0 +1,313 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#top-cont{
+    height: 60px;
+    background-color: #BD3B1B;
+    border: none;
+}
+#section1{
+    height: 250px;  
+}
+#section5{
+   
+    padding: 30px 4px;
+    background-color: #BD3B1B;
+   
+}
+.bacon{
+    position: absolute;
+    height: 105px;
+    width: 111px;
+    left: 264px;
+top: 284px;
+}
+.book{
+    position: absolute;
+width: 113px;
+height: 113px;
+right: 3px;
+top: 223px;
+transform: rotate(0deg);
+}
+.nav-container1{
+    width: 100%;
+}
+    .navbar1{
+        display: grid;
+        grid-template-columns: 100px 300px 50px auto;
+            align-items: center;
+        height: 150px;
+        width: 100%;
+    }
+    #navbar-logo{
+        color: rgb(0, 0, 0);
+        justify-self: start;
+        margin-left: 16px;
+        font-size: 20px;
+    }
+    .img{
+        margin-left: 27px;
+    }
+    .nav-menu1{
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        list-style: none;
+        width: 70%;
+        justify-self: end;
+    }
+    .nav-links{
+        text-decoration: none !important;
+        color: rgb(0, 0, 0);
+    } 
+    .nav-links:hover{
+        color: rgb(99, 85, 85);
+    }
+    .menu-toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: rgb(0, 0, 0);
+    }
+.menu-toggle:hover{
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+#mobile-menu.is-active .bar:nth-child(2){
+    opacity: 0;
+}
+#mobile-menu.is-active .bar:nth-child(1){
+   transform: translate(0px,12px) rotate(45deg);
+}
+#mobile-menu.is-active .bar:nth-child(3){
+    transform: translate(0px,-4px) rotate(-45deg);
+ }
+
+ .direction-page{
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    padding: 20px 40px;
+    
+}
+
+.page-link{
+    color: black;
+    font-size: 18px;
+    padding: 0 15px 0 5px ;
+    display: inline-block;
+    border: none;
+    text-decoration: none !important;
+}
+#contact-section{
+    padding: 0px 27px 30px 27px;
+}
+#contact-details{
+    padding: 0px 27px 30px 27px;
+}
+.mapframe{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contactrow h2{
+    margin-bottom: 10px;
+}
+.contactrow2 h4{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+/* .contactdetails h5{
+    margin-bottom: 20px;
+} */
+.contactsect h2{
+    margin-bottom: 20px;
+}
+
+
+/* Footer css */
+.container1{
+    color: white;
+    margin: 0px auto;
+  
+    width: auto;
+    padding: 0 10px;
+   
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 33.33%;
+    padding: 40px 25px;
+}
+.footer-col h4{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.footer-col ul li{
+    margin-bottom: 18px;
+}
+.foot-name p{
+    /* padding-top: -50px; */
+    font-size: 20px;
+}
+.foot-link ul{
+   position: relative;
+   left: -40px;
+}
+.foot-link ul li a{
+    font-size: 16px;
+    text-decoration: none !important;
+    color: white;
+}
+
+@media only screen and (max-width:940px) {
+    html,body{
+        overflow-x: hidden;
+        margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    }
+    #top-cont{
+   
+        height: 48px;
+        background-color: #BD3B1B;
+        border: none;
+    }
+    .bacon{
+        position: absolute;
+        height: 75px;
+        width: 75px;
+        left: 40px;
+    top: 284px;
+    }
+    .book{
+        position: absolute;
+    width: 75px;
+    height: 75px;
+    right: 0px;
+    top: 450px;
+    transform: rotate(0deg);
+    }
+    .nav-container1{
+        position: relative;
+    }
+    .nav-menu1{
+        z-index: 2;
+        display: grid;
+        grid-template-columns: auto ;
+        width: 100%;
+       right:100%;
+        opacity: 0;
+        position: absolute;
+        top: 134px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #navbar-logo{
+        margin-left: 18px;
+        font-size: 18px;
+    }
+    .img{
+        margin-left: 5px;
+    }
+    .nav-menu1.active{
+        background-color: grey;
+        left: 0;
+        opacity: 1;
+        padding-left: 0px;
+        z-index: 2;
+       
+    }
+    .nav-links{
+        font-size: 18px;
+        line-height: 50px;
+        width: 100%;
+        display: table;
+        margin: auto;
+        font-weight: 500;
+    }
+    .navbar1{
+        display: grid;
+    grid-template-columns: 76px 256px 10px auto;
+        align-items: center;
+        height: 150px;
+        
+    }
+    .menu-toggle{
+        position: absolute;
+        right: 13px;
+        /* bottom: 50px; */
+        /* transform: translate(20px,50px); */
+    }
+    .menu-toggle .bar{
+        display: block;
+        cursor: pointer;
+        
+        
+       
+    }
+    .menu-toggle:hover{
+        cursor: pointer;
+    }
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+       transform: translate(0px,12px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translate(0px,-4px) rotate(-45deg);
+     }
+   
+    #section5{
+        padding: 30px 15px;
+        background-color: #BD3B1B;
+       
+    }
+    #contact-section{
+        margin: 30px auto;
+        padding: 0px 20px;
+    }
+    .footer-col{
+        width: 100%;
+        padding: 30px 15px;
+    }
+    .footer-col h4{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .foot-name p{
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    .foot-link ul li a{
+        font-size: 16px;
+        text-decoration: none !important;
+        color: white;
+    }
+    .container1{
+        color: rgb(255, 255, 255);
+        margin: 10px auto;
+       
+        width:100%;
+    }
+    .mapframe{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 306px;
+        margin: auto;
+    }
+}

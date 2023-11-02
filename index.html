@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="top-cont">
+
+    </div>
+    <img src="icons/bacon.png" alt="" class="bacon">
+    <img src="icons/book.png" alt="" class="book">
+    <button class="totop" id="topbutton" onclick="topFunction()">
+        <a href="#totop">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </button>
+    <section id="section1">
+        <div class="nav-container1">
+            <nav class="navbar1">
+                <a href="index.html"><img class="img" src="logo.png" alt="logo-ldbems" width="80" height="80"></a>
+
+                <h1 id="navbar-logo">Late Devkibai Bang
+                    English
+                    Medium High School & Junior College </h1>
+
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu1">
+                    <li><a href="index.html" class="nav-links">Home</a></li>
+                    <li><a href="about.html" class="nav-links">About</a></li>
+                    <li><a href="sports.html" class="nav-links">Beyond Academics</a></li>
+                    <li><a href="events.html" class="nav-links">Events</a></li>
+                    <li><a href="contact.html" class="nav-links">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="homebox">
+            <p>Your child's future is in safe hands!</p>
+
+        </div>
+        <div class="row adrow">
+            <div class="col-lg-6 adbut">
+                <button type="button" class="btn inqbut" data-toggle="modal"
+                    data-target="#exampleModal">ADMISSIONS</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Admission Inquiry Form</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#">
+
+                                    <div class="form-group row">
+                                        <label for="question" class="col-sm-4 col-form-label">Name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="name" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="option1" class="col-sm-4 col-form-label">Phone number</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="phonenumber" name="phonenumber">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="option2" class="col-sm-4 col-form-label">Standard</label>
+                                        <div class="col-sm-8">
+                                            <select name="standard" id="standard" class="form-control">
+                                                <option value="null" disabled>--Select Standard--</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                                <option value="Nursery"> Nursery</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 adbut2">
+                <button type="button" class="btn inqbut3" onclick="location.href='contact.html'">CONTACT US</button>
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 aboutus">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nulla hic nisi praesentium ipsa
+                        qui, rem aliquam modi distinctio temporibus, dignissimos voluptate animi numquam, ut alias
+                        beatae magnam. Odio, voluptatum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit exercitationem iste, id officia
+                        voluptate nostrum quibusdam nam a incidunt beatae! Repudiandae modi, voluptatum vel beatae harum
+                        a illo dignissimos.</p>
+
+                    <a href="#">Read more</a>
+                    <a href="#" class="otherschool">Our other schools</a>
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="infra-imagesbox">
+                        <img src="infrastructure/infrastructure resize images-01.jpg" alt="" class="infra-images">
+                        <img src="infrastructure/infrastructure resize images-07.jpg" alt="" class="infra-images">
+
+                    </div>
+                    <div class="infra-imagesbox">
+                        <img src="infrastructure/infrastructure resize images-09.jpg" alt="" class="infra-images">
+                        <img src="infrastructure/infrastructure resize images-11.jpg" alt="" class="infra-images">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+
+        <div class="container-fluid">
+            <h2>Why Choose Us?</h2>
+            <div class="row">
+                <div class="col-lg-3 my-4 symbol">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x" style="color:#E39204"></i>
+                        <i class="fa fa-bus fa-stack-1x fa-inverse" style="color:#000000"></i>
+                    </span>
+                    <h5>XYZ ACRES CAMPUS</h5>
+                </div>
+                <div class="col-lg-3  my-4 symbol">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x" style="color:#E39204"></i>
+                        <i class="fa fa-building fa-stack-1x fa-inverse" style="color:#000000"></i>
+                    </span>
+                    <h5>BUS FACILITY</h5>
+                </div>
+                <div class="col-lg-3 my-4 symbol">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x" style="color:#E39204"></i>
+                        <i class="fa fa-flask fa-stack-1x fa-inverse" style="color:#000000"></i>
+                    </span>
+                    <h5> WELL EQIUPED LABS</h5>
+                </div>
+                <div class="col-lg-3 my-4 symbol">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x " style="color:#E39204"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse" style="color:#000000"></i>
+                    </span>
+                    <h5>DIGITAL LEARNING FACILITES</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="top-cont2">
+        <div class="container">
+            <div class="contentbox">
+                <div class="row">
+                    <div class="col-lg-9 addmission-slogan">
+                        <p><span>ADMISSIONS OPEN !!</span>
+                            Enroll your child in our school.</p>
+                    </div>
+                    <div class="col-lg-3 inquirybox">
+                        <button type="button" class="inqbut2">ENQUIRE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="section4">
+        <div class="container-fluid ">
+            <div class="row poster">
+                <div class="col-lg-3">
+                    <div class="scores">
+                        <div class="value">1260</div>
+                    </div>
+                    <p>STUDENTS</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="scores">
+                        <div class="value">60</div>
+                    </div>
+                    <p>STAFF</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="scores">
+                        <div class="value">54</div>
+                    </div>
+                    <p>CLASSROOMS</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="scores">
+                        <div class="value">5</div>
+                    </div>
+                    <p>LABS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="management-section">
+        <div class="container-fluid">
+            <h2 style="text-align: left; margin-bottom: 20px;"> Board Members</h2>
+            <div class="manage-box">
+
+                <div class="row">
+                    <div class="col-lg-4 message-col">
+                        <img src="management/manage.jpg" alt="managment-photo" class="profile-image">
+                        <h5>Name of member</h5>
+                        <p>Chairperson</p>
+                        <a href="chairperson.html" class="message-button">Read more</a>
+                    </div>
+                    <div class="col-lg-4 message-col">
+                        <img src="management/manage.jpg" alt="managment-photo" class="profile-image">
+                        <h5>Name of member</h5>
+                        <p>Chairperson</p>
+                        <a href="boardmember.html" class="message-button">Read more</a>
+                    </div>
+                    <div class="col-lg-4 message-col">
+                        <img src="management/manage.jpg" alt="managment-photo" class="profile-image">
+                        <h5>Name of member</h5>
+                        <p>Chairperson</p>
+                        <a href="boardmember.html" class="message-button">Read more</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="prinmsg">
+                            <h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                From principle's desk</h2>
+                            <div class="row m-2">
+                                <div class="col-lg-12" style="text-align:center">
+                                    <img src="management/manage.jpg" alt="managment-photo" class="profile-image">
+
+                                </div>
+                            </div>
+                            <div class="msgbox">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi voluptates sed
+                                    commodi impedit quas aperiam quae possimus cumque animi doloremque quasi soluta
+                                    reprehenderit magni, ipsam molestias id dignissimos adipisci.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia provident qui
+                                    distinctio
+                                    eveniet ipsum, optio rerum nihil voluptatem officia accusantium veritatis cum nobis
+                                    aut?
+                                    Ipsa explicabo reprehenderit vero eius voluptatibus!
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae possimus assumenda
+                                    eaque alias perspiciatis expedita, sequi provident distinctio facere ipsa quaerat
+                                    iure obcaecati dolore sapiente sunt nam quae illo architecto?
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resultsection">
+        <div class="container-fluid">
+            <div class="timeline-items">
+                <div class="timeline-item" >
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2014</div>
+                    <div class="timeline-content" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                        molestiae esse. Et, quod! Maxime rerum dolorum ratione laudantium. Officia assumenda molestiae
+                        nesciunt dolorem delectus temporibus libero aut accusamus ab perferendis.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2015</div>
+                    <div class="timeline-content" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                        molestiae esse. Et, quod! Maxime rerum dolorum ratione laudantium. Officia assumenda molestiae
+                        nesciunt dolorem delectus temporibus libero aut accusamus ab perferendis.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2016</div>
+                    <div class="timeline-content" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                        molestiae esse. Et, quod! Maxime rerum dolorum ratione laudantium. Officia assumenda molestiae
+                        nesciunt dolorem delectus temporibus libero aut accusamus ab perferendis.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2017</div>
+                    <div class="timeline-content" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                        molestiae esse. Et, quod! Maxime rerum dolorum ratione laudantium. Officia assumenda molestiae
+                        nesciunt dolorem delectus temporibus libero aut accusamus ab perferendis.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                        molestiae esse. Et, quod! Maxime rerum dolorum ratione laudantium. Officia assumenda molestiae
+                        nesciunt dolorem delectus temporibus libero aut accusamus ab perferendis.</div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+    <section id="section5">
+        <footer class="footer">
+            <div class="container1">
+                <div class="row1">
+                    <div class="footer-col foot-name">
+
+                        <h4>Late Devkibai Bang<br>
+                            English
+                            Medium High School</h4>
+
+                        <p>Raipur Hingna Nagpur<br>441110</p>
+
+
+                    </div>
+                    <div class="footer-col foot-link">
+                        <h4>Qiuck navigation</h4>
+                        <ul>
+                            <li class="link"><a href="#">Home</a></li>
+                            <li class="link"><a href="#">About</a></li>
+                            <li class="link"><a href="#">Beyond Academics</a></li>
+                            <li class="link"><a href="#">Administration</a></li>
+                            <li class="link"><a href="#">Inquiry</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect with us!</h4>
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Phone Number">
+                            </div>
+
+                            <div class="form-group">
+
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                    placeholder="Leave a Message" style="resize: none;"></textarea>
+                            </div>
+                            <button type="submit" class="btn submitbut">SUBMIT</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </section>
+    <section id="section6">
+        <div class="container-fluid">
+            <div class="footinfo">
+                <div class="row">
+                    <div class="col-lg-6 footwrite">
+                        <p>Copyright @ LDBEMS 2022</p>
+                    </div>
+                    <div class="col-lg-6 links">
+                        <a href="https://m.facebook.com/Late-Devkibai-Bang-SchoolHingna-102180648241883"
+                            target="_blank"><i class="fa fa-facebook-f mx-2"></i></a>
+
+                        <a href="https://www.instagram.com/ldbems_hingna/" target="_blank"><i
+                                class="fa fa-instagram mx-2"></i></a>
+                        <a href="https://youtube.com/channel/UCAQKUcbBa9uXZf-2el0wgGQ" target="_blank"><i
+                                class="fa fa-youtube mx-2"></i></a>
+                        <a href="https://youtube.com/channel/UCAQKUcbBa9uXZf-2el0wgGQ" target="_blank"><i
+                                class="fa fa-whatsapp mx-2"></i></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const menu = document.querySelector("#mobile-menu");
+        const menulinks = document.querySelector(".nav-menu1");
+        const navlink = document.querySelector(".nav-links");
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('is-active');
+            menulinks.classList.toggle('active');
+
+        })
+        mybutton = document.getElementById("topbutton");
+
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollIntoView({
+                behavior: "smooth",
+            });
+        }
+
+    </script>
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
